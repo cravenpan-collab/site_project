@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #1e6fbf; /* основной синий цвет */
+  --bg-color: #fafafa;
+  --text-color: #222;
+  --muted-bg: #f4f4f4;
+  --card-bg: #fff;
+  --footer-bg: #eee;
+}
+
+* { box-sizing: border-box; }
+body { font-family: Inter, Arial, Helvetica, sans-serif; margin:0; color:var(--text-color); background:var(--bg-color); line-height:1.5; }
+.container { max-width:1100px; margin:0 auto; padding:18px; }
+
+/* Header */
+.site-header { background:var(--primary-color); color:#fff; padding:18px 0; }
+.site-header h1 { margin:0 0 6px 0; font-size:1.4rem; }
+.subtitle { margin:0 0 8px 0; opacity:0.95; }
+.main-nav { margin-top:8px; }
+.main-nav a { color:#fff; margin-right:14px; text-decoration:none; font-weight:600; }
+
+/* Main content */
+main { padding:20px 0; }
+h2 { color:var(--primary-color); margin-top:0; }
+ul { margin-left:1.1rem; }
+.pdf-embed { margin-top:12px; }
+
+/* Annotations and cards */
+.annotation { border-left:4px solid var(--primary-color); padding:10px 12px; margin:12px 0; background:var(--card-bg); box-shadow:0 1px 2px rgba(0,0,0,0.03); }
+
+/* Links, code and footer */
+a { color:var(--primary-color); }
+code { background:var(--muted-bg); padding:2px 6px; border-radius:4px; font-family:monospace; }
+.site-footer { background:var(--footer-bg); padding:12px 0; text-align:center; font-size:0.9rem; margin-top:20px; }
+
+/* Responsive */
+@media (max-width:720px) {
+  .container { padding:12px; }
+  .site-header h1 { font-size:1.1rem; }
+  iframe { height:500px; }
+}
